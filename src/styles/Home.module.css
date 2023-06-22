@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+}
+
+.header > h1 {
+  margin-left: 10px;
+}
+
+.translations {
+  display: flex;
+  margin-left: auto;
+}
+
+.translations > a {
+  padding: 0 6px;
+  color: var(--cwhite);
+  text-decoration: none;
+}
+
+.translations > a:not(:last-child) {
+  border-right: 1px solid var(--cwhite);
+}
+
+.app {
+  display: flex;
+}
+
+.app > div {
+  width: 50%;
+}
