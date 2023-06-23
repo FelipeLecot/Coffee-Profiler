@@ -26,7 +26,7 @@ const Result = (props: Props) => {
       <div className={styles.details}>
         <span>Origin</span>
         <h2>Colombian (Huila)</h2>
-        <span>Specia</span>
+        <span>Specie</span>
         <h2>Arabica (Pink Bourbon)</h2>
         <span>Roast</span>
         <h2>Medium</h2>
