@@ -1,10 +1,11 @@
 .header {
   display: flex;
   align-items: center;
+  padding: 2rem 0;
 }
 
-.header > h1 {
-  margin-left: 10px;
+.header > div:first-of-type {
+  margin-left: 1rem;
 }
 
 .translations {

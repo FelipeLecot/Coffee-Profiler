@@ -3,7 +3,7 @@
 	line-height: 1.5;
 	font-weight: 400;
 
-  padding: 2rem;
+  padding: .5rem 2rem;
 
   color-scheme: light dark;
 	color: var(--cwhite);
@@ -25,4 +25,33 @@
 	--cred: #ba2d0b;
 	--cviolet: #861657;
 	--cgreen: #54ff8c;
+}
+
+input[type=range] {
+	appearance: none;
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  width: 100%; /* Specific width is required for Firefox. */
+  background: transparent; /* Otherwise white in Chrome */
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+input[type=range]:focus {
+  outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+input[type=range]::-ms-track {
+  width: 100%;
+  cursor: pointer;
+
+  /* Hides the slider so custom styles can be added */
+  background: transparent; 
+  border-color: transparent;
+  color: transparent;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
 }

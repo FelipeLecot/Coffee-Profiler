@@ -1,0 +1,151 @@
+.form {
+  display: flex;
+  padding: .5rem;
+}
+
+.form > div {
+  width: 50%;
+}
+
+.form > div:first-of-type {
+  margin-right: 4rem;
+}
+
+
+.form h3 {
+  margin: 0;
+}
+
+.form h2 {
+  margin-bottom: .5rem;
+}
+
+/* ------------------------------------------------------ */
+
+/* Special styling for WebKit/Blink */
+.form input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: var(--cwhite);
+  cursor: pointer;
+  margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+}
+
+/* All the same stuff for Firefox */
+.form input[type=range]::-moz-range-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: var(--cwhite);
+  cursor: pointer;
+}
+
+/* All the same stuff for IE */
+.form input[type=range]::-ms-thumb {
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background: var(--cwhite);
+  cursor: pointer;
+}
+
+/* -------------------------------------------- */
+
+.form input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.form input[type=range]::-ms-track {
+  width: 100%;
+  height: 8px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+.form input[type=range]::-ms-fill-lower {
+  border-radius: 4px;
+}
+.form input[type=range]::-ms-fill-upper {
+  border-radius: 4px;
+}
+
+/* ---------------------------------------------------------- */
+
+.form input.one[type=range]::-webkit-slider-runnable-track {
+  background: var(--ccyan);
+}
+.form input.one[type=range]::-moz-range-track {
+  background: var(--ccyan);
+}
+.form input.one[type=range]::-ms-fill-lower {
+  background: var(--ccyan);
+}
+.form input.one[type=range]::-ms-fill-upper {
+  background: var(--ccyan);
+}
+
+.form input.two[type=range]::-webkit-slider-runnable-track {
+  background: var(--cgreen);
+}
+.form input.two[type=range]::-moz-range-track {
+  background: var(--cgreen);
+}
+.form input.two[type=range]::-ms-fill-lower {
+  background: var(--cgreen);
+}
+.form input.two[type=range]::-ms-fill-upper {
+  background: var(--cgreen);
+}
+
+.form input.three[type=range]::-webkit-slider-runnable-track {
+  background: var(--cyellow);
+}
+.form input.three[type=range]::-moz-range-track {
+  background: var(--cyellow);
+}
+.form input.three[type=range]::-ms-fill-lower {
+  background: var(--cyellow);
+}
+.form input.three[type=range]::-ms-fill-upper {
+  background: var(--cyellow);
+}
+
+.form input.four[type=range]::-webkit-slider-runnable-track {
+  background: var(--cviolet);
+}
+.form input.four[type=range]::-moz-range-track {
+  background: var(--cviolet);
+}
+.form input.four[type=range]::-ms-fill-lower {
+  background: var(--cviolet);
+}
+.form input.four[type=range]::-ms-fill-upper {
+  background: var(--cviolet);
+}
+
+.form input.five[type=range]::-webkit-slider-runnable-track {
+  background: var(--cred);
+}
+.form input.five[type=range]::-moz-range-track {
+  background: var(--cred);
+}
+.form input.five[type=range]::-ms-fill-lower {
+  background: var(--cred);
+}
+.form input.five[type=range]::-ms-fill-upper {
+  background: var(--cred);
+}

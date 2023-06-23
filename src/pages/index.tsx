@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 import Link from 'next/link'
+import Form from './components/Form'
+import Result from './components/Result'
 
 export default function Home() {
   return (
@@ -14,7 +16,9 @@ export default function Home() {
       </Head>
       <header className={styles.header}>
         <Image src="/logo.png" alt="Coffee Profiler Logo" width={50} height={50} />
-        <h1>Coffee Profiler</h1>
+        <div>
+          <h1>Coffee Profiler</h1>
+        </div>
         <div className={styles.translations}>
           <a href='./es/'>ES</a>
           <a href='./en/'>EN</a>
@@ -26,22 +30,14 @@ export default function Home() {
       <div className={styles.app}>
         <div>
           <h1>Discover your perfect coffee</h1>
-          <div className='parameters'>
-            <div className='flavours'> 
-
-            </div>
-            <div className='filters'> 
-
-            </div>
-          </div>
-          <button>Search</button>
+          <Form />
         </div>
         <div>
-
+          <Result />
         </div>
-        <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
-        <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
       </div>
+      <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
+      <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
     </>
   )
 }
