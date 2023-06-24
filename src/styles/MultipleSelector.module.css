@@ -1,0 +1,88 @@
+.chips {
+  display: flex;
+  overflow-x: auto;
+  margin: .5rem 0;
+  padding: .5rem 0;
+}
+
+.chips > span {
+  padding: 2px 6px;
+  height: 1.6rem;
+  color: var(--cwhite);
+  background: var(--clightgrey);
+  border-radius: 6px;
+  margin-right: 6px;
+  white-space: nowrap;
+}
+
+.chips > span:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.chips > span:hover::after {
+  color: var(--cwhite);
+  font-size: 1rem;
+  font-weight: bold;
+  content: 'x';
+  margin-left: 6px;
+}
+
+.selector-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 99vw;
+  height: 99vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.selector-modal > .backdrop {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: var(--cblack);
+  z-index: 1;
+}
+
+.selector-modal svg {
+  width: 1.5rem;
+}
+
+.selector-container {
+  z-index: 100;
+  width: 350px;
+  height: 450px;
+  background: var(--cdarkgrey);
+  border-radius: 10px;
+  border: 3px solid var(--clightgrey);
+  position: relative;
+}
+
+.selector-container > .close-btn {
+  top: 4px;
+  right: 4px;
+  position: absolute;
+}
+
+.selector-option-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  padding: 2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selector-option-container > div > button {
+  margin: .2rem 0;
+  width: 200px;
+  text-align: left;
+}
