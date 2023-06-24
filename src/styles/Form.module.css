@@ -1,6 +1,7 @@
 .form {
   display: flex;
   padding: .5rem;
+  margin-right: 4rem;
 }
 
 .form > div {
@@ -167,4 +168,16 @@
 }
 .form input.five[type=range]::-ms-fill-upper {
   background: var(--cred);
+}
+
+/* ---------------------------------------------------------- */
+
+.filters > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.filters > div > select {
+  width: 50%;
 }

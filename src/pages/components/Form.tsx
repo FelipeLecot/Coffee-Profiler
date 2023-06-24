@@ -40,6 +40,31 @@ function Form({}: Props) {
         </div>
         <div className={styles.filters}> 
           <h2>Filters</h2>
+          <div>
+            <h3>Origin</h3>
+            <select>
+              <option>Any</option>
+              <option value="1">1 One</option>
+              <option value="1">1 One</option>
+              <option value="1">1 One</option>
+              <option value="1">1 One</option>
+              <option value="1">1 One</option>
+              <option value="1">1 One</option>
+            </select>
+          </div>
+          <div>
+            <h3>Roast</h3>
+            <select>
+              <option>Any</option>
+              <option value="1">Very light</option>
+              <option value="1">Light</option>
+              <option value="1">Medium-light</option>
+              <option value="1">Medium</option>
+              <option value="1">Medium-dark</option>
+              <option value="1">Dark</option>
+              <option value="1">Very Dark</option>
+            </select>
+          </div>
         </div>
       </div>
       <div className={styles["submit-container"]}>
