@@ -15,14 +15,14 @@ const MultipleSelector = ({options, showChips, selected, updateSelected}: Props)
   const [filter, updateFilter] = React.useState("");
 
   return (
-    <div>
-      <button onClick={() => updateShowModal(true)}>Notes</button>
+    <>
+      <button className={styles["show-modal"]} onClick={() => updateShowModal(true)}>Tasting Notes</button>
       {
         showChips ?
         <div className={styles.chips}>
           {
             selected.map((option, index) => {
-              return <span key={"chip-" + index}>{option}</span>
+              return <span onClick={() => {updateSelected(selected.filter((value) => value != option))}} key={"chip-" + index}>{option}</span>
             })
           }
         </div>
@@ -49,7 +49,7 @@ const MultipleSelector = ({options, showChips, selected, updateSelected}: Props)
         </div>
         <div className={styles.backdrop}></div>
       </div>
-    </div>
+    </>
   )
 }
 

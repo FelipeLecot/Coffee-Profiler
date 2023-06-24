@@ -11,6 +11,21 @@
   margin-right: 4rem;
 }
 
+.submit-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.submit-container > button {
+  padding: .8rem 2rem;
+  border-radius: .5rem;
+  border: none;
+  background: var(--cwhite);
+  color: var(--cblack);
+  font-weight: 600;
+  cursor: pointer;
+}
 
 .form h3 {
   margin: 0;
@@ -19,6 +34,10 @@
 .form h2 {
   margin-bottom: .5rem;
 }
+
+.tasting-notes {
+  margin-top: 1rem;
+} 
 
 /* ------------------------------------------------------ */
 

@@ -13,6 +13,7 @@
   border-radius: 6px;
   margin-right: 6px;
   white-space: nowrap;
+  font-weight: 600;
 }
 
 .chips > span:hover {
@@ -84,5 +85,19 @@
 .selector-option-container > div > button {
   margin: .2rem 0;
   width: 200px;
+  text-align: left;
+}
+
+.show-modal {
+  padding: .8rem;
+  width: 100%;
+  border-radius: .5rem;
+  border: none;
+  background: var(--cdarkgrey);
+  color: var(--cwhite);
+  border: 3px solid var(--clightgrey);
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
   text-align: left;
 }

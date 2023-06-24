@@ -34,13 +34,17 @@ function Form({}: Props) {
             <h3>Astringency</h3>
             <input className={styles.five} type="range" min="0" max="10" step="0.1" />
           </div>
-          <MultipleSelector options={notesOptions} showChips={true} selected={selected} updateSelected={updateSelected}/>
+          <div className={styles["tasting-notes"]}>
+            <MultipleSelector options={notesOptions} showChips={true} selected={selected} updateSelected={updateSelected}/>
+          </div>
         </div>
         <div className={styles.filters}> 
           <h2>Filters</h2>
         </div>
       </div>
-      <button>Search</button>
+      <div className={styles["submit-container"]}>
+        <button>Search</button>
+      </div>
     </>
   )
 }
