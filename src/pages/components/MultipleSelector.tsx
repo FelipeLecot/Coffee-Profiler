@@ -6,11 +6,12 @@ import { faSquare, faSquareCheck, faTimes } from '@fortawesome/free-solid-svg-ic
 type Props = {
   options: string[],
   showChips: boolean,
+  selected: String[],
+  updateSelected: (selected: String[]) => void
 }
 
-const MultipleSelector = ({options, showChips}: Props) => {
+const MultipleSelector = ({options, showChips, selected, updateSelected}: Props) => {
   const [showModal, updateShowModal] = React.useState(true);
-  const [selected, updateSelected] = React.useState<String[]>([]);
   const [filter, updateFilter] = React.useState("");
 
   return (

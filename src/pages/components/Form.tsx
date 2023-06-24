@@ -7,6 +7,8 @@ type Props = {}
 const notesOptions = ["1 One", "2 Two", "3 Three", "4 Four", "5 Five", "6 Six", "7 Seven", "8 Eight", "9 Nine", "10 Ten", "11 Eleven", "12 Twelve", "13 Thirteen", "14 Fourteen", "15 Fifteen", "16 Sixteen", "17 Seventeen", "18 Eighteen", "19 Nineteen", "20 Twenty"];
 
 function Form({}: Props) {
+  const [selected, updateSelected] = React.useState<String[]>([]);
+
   return (
     <>
       <div className={styles.form}>
@@ -32,7 +34,7 @@ function Form({}: Props) {
             <h3>Astringency</h3>
             <input className={styles.five} type="range" min="0" max="10" step="0.1" />
           </div>
-          <MultipleSelector options={notesOptions} showChips={true}/>
+          <MultipleSelector options={notesOptions} showChips={true} selected={selected} updateSelected={updateSelected}/>
         </div>
         <div className={styles.filters}> 
           <h2>Filters</h2>
