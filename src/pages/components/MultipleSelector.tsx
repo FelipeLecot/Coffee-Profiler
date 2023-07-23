@@ -11,7 +11,7 @@ type Props = {
 }
 
 const MultipleSelector = ({options, showChips, selected, updateSelected}: Props) => {
-  const [showModal, updateShowModal] = React.useState(true);
+  const [showModal, updateShowModal] = React.useState(false);
   const [filter, updateFilter] = React.useState("");
 
   return (
