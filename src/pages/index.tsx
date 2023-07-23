@@ -31,8 +31,8 @@ export default function Home() {
         <div>
           <h1>Discover your perfect coffee</h1>
           <Form />
-          <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
-          <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
+          {/* <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
+          <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3> */}
         </div>
         <Result />
       </div>
