@@ -22,11 +22,3 @@
 .translations > a:not(:last-child) {
   border-right: 1px solid var(--cwhite);
 }
-
-.app {
-  display: flex;
-}
-
-.app > div {
-  width: 50%;
-}
