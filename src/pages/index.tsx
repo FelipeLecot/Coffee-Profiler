@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Coffee Profiler</title>
-        <meta name="description" content="Coffee profiler" />
+        <meta name="description" content="Open-source coffee recommendation web app that uses cutting-edge vectorial data to suggest personalized brews based on your taste and location. Savor the perfect cup wherever you are." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
@@ -19,20 +19,13 @@ export default function Home() {
         <div>
           <h1>Coffee Profiler</h1>
         </div>
-        <div className={styles.translations}>
-          <a href='./es/'>ES</a>
-          <a href='./en/'>EN</a>
-          <a href='./pt/'>PT</a>
-          <a href='./it/'>IT</a>
-          <a href='./fr/'>FR</a>
-        </div>
       </header>
       <div className={styles.app}>
         <div>
           <h1>Discover your perfect coffee</h1>
           <Form />
-          {/* <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
-          <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3> */}
+          <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
+          <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
         </div>
         <Result />
       </div>
