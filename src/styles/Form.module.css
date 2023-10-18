@@ -12,13 +12,7 @@
   margin-right: 4rem;
 }
 
-.submit-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1rem;
-}
-
-.submit-container > button {
+.button {
   padding: .8rem 2rem;
   border-radius: .5rem;
   border: none;
