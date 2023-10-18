@@ -1,11 +1,6 @@
-.header {
+.app {
   display: flex;
-  align-items: center;
-  padding: 1rem 0;
-}
-
-.header > div:first-of-type {
-  margin-left: 1rem;
+  margin-top: .6rem;
 }
 
 .translations {
@@ -21,4 +16,22 @@
 
 .translations > a:not(:last-child) {
   border-right: 1px solid var(--cwhite);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem .6rem;
+}
+
+.nav > div:first-of-type {
+  margin-left: 1rem;
+}
+
+.nav > div:nth-of-type(2) {
+  margin-left: auto;
+}
+
+.header {
+  padding: 1rem 10%;
 }

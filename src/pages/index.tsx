@@ -14,20 +14,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo.png" />
       </Head>
-      <header className={styles.header}>
+      <header className={styles.nav}>
         <Image src="/logo.png" alt="Coffee Profiler Logo" width={50} height={50} />
         <div>
           <h1>Coffee Profiler</h1>
         </div>
-      </header>
-      <div className={styles.app}>
         <div>
-          <h1>Discover your perfect coffee</h1>
+          <a>Sign In</a>
+        </div>
+        <div>
+          <a>Log In</a>
+        </div>
+      </header>
+      <div className={styles.header}>
+        <h1>Discover your perfect coffee</h1>
+        <div className={styles.app}>
           <Form />
           <Result />
-          <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
-          <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
         </div>
+        <h3>Missing your favorite coffee? <Link href="./review/">Write a review</Link></h3>
+        <h3>Are you a farmer / roaster? <Link href="./register/">Create a profile</Link></h3>
       </div>
     </>
   )

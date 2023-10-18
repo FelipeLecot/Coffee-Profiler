@@ -1,10 +1,6 @@
 .form {
-  display: flex;
   padding: .5rem;
   margin-right: 4rem;
-}
-
-.form > div {
   width: 50%;
 }
 

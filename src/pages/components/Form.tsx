@@ -37,8 +37,8 @@ function Form({}: Props) {
           <div className={styles["tasting-notes"]}>
             <MultipleSelector options={notesOptions} showChips={true} selected={selected} updateSelected={updateSelected}/>
           </div>
-        </div>
         <button className={styles.button}>Search</button>
+        </div>
       </div>
     </>
   )
